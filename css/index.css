@@ -13,12 +13,13 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,  
 time, mark, audio, video {  
 margin: 0;  
-padding: 0;  
-border: 0;  
+padding: 0;
+border: 1px solid red;
 font-size: 100%;  
 font: inherit;  
-vertical-align: baseline;  
+vertical-align: baseline;
 }
+
 /*GENERAL STYLES*/
 html{
     font-size:62.5%;
@@ -27,6 +28,7 @@ body{
     font-size:1.6rem;
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;	
+    box-sizing: border-box;
 }
 h1, p, .name, .bio {	
     font-family: 'Raleway', sans-serif;	
@@ -129,7 +131,7 @@ button:hover{
 
 .artist{
     width:40%;
-    text-align:center;
+    
 }
 .artist img{
     width:100%;
@@ -145,9 +147,48 @@ button:hover{
 
     .title-container div {
         width: 100%;
-        margin: 0;
+        height: 40vh;
+        margin: none;
         margin-top: 5%;
     }
 
-    
+    .artists-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10vw;
+    }
+
+    .artist {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        
+    }
+
+    .artist img {
+        width: 50vw;
+        height: 40vw;
+    }
+
+    a {
+        font-size:2rem;
+    }
+
+    .bio {
+        width: 100%;
+        font-size:1.4rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    button{
+        padding:2% 5%;
+        font-size: 1.7rem;
+    }
+
 }
